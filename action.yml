@@ -1,6 +1,6 @@
-name: 'Publish Gitbook'
+name: 'Publish wiki'
 description: 'Publish Gitbook to GitHub Pages'
-author: 'Liren Tu'
+author: 'Liren Tu, jdh'
 branding:
   icon: 'book'
   color: 'blue'

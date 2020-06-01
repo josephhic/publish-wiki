@@ -3,11 +3,11 @@
 # install the plugins and build the static site
 gitbook install && gitbook build
 
-# checkout to the gh-pages branch
-git checkout gh-pages || git checkout -b gh-pages
+# checkout to the deploy branch
+git checkout deploy || git checkout -b deploy
 
 # pull the latest updates
-git pull origin gh-pages --rebase
+git pull origin deploy --rebase
 
 # copy the static site files into the current directory.
 cp -R _book/* .
@@ -24,7 +24,7 @@ COMMIT_MESSAGE="Update gitbook `date '+%Y-%m-%d %H:%M:%S'`"
 git commit -a -m "${COMMIT_MESSAGE}"
 
 # push to the origin
-git push -u origin gh-pages
+git push -u origin deploy
 
 # checkout to the master branch
 git checkout master

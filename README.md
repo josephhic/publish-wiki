@@ -2,9 +2,9 @@
 
 ![Build Status](https://github.com/tuliren/publish-gitbook/workflows/build/badge.svg)
 
-This action publishes a gitbook to github pages.
+This action is based on one that publishes a gitbook to github pages.
 
-The source branch is `master`, and the target branch is `gh-pages`. If `gh-pages` does not exist, it will be created automatically.
+The source branch is `master`, and the target branch is `deploy`. If `deploy` does not exist, it will be created automatically.
 
 ## How to Use
 

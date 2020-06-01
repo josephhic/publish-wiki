@@ -37,10 +37,10 @@ gitbook install
 print_info "buildling gitbook"
 gitbook build
 
-# checkout gh-pages branch
+# checkout deploy branch
 set +e
-git checkout gh-pages || git checkout -b gh-pages
-git fetch origin && git reset origin/gh-pages
+git checkout deploy || git checkout -b deploy
+git fetch origin && git reset origin/deploy
 git status
 set -e
 
@@ -62,5 +62,5 @@ git commit -a -m "${COMMIT_MESSAGE}"
 git remote add publisher ${PUBLISHER_REPO}
 
 # push to the publisher
-print_info "pushing to gh-pages branch"
-git push -u publisher gh-pages
+print_info "pushing to deploy branch"
+git push -u publisher deploy
