@@ -13,3 +13,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.github_token }}
+    - ${{ inputs.client_secret }}
